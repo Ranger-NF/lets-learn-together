@@ -15,9 +15,8 @@ Members of LLT
 - Sanjo
 - Anupama
 - Aysha Henan
-- Fathimath Raniya pk 
 - Adarsh  
-
+- Fathimath Raniya pk 
 ---
 
 "Alone we can do so little; together we can do so much" - Helen Keller
