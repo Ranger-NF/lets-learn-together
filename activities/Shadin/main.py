@@ -24,6 +24,7 @@ def score():
     
 
 root = tk.Tk()
+root.title("Quiz")
 
 qn1 = tk.Label(root, text="1. Starting position of an array is:")
 ans1 = tk.IntVar()
