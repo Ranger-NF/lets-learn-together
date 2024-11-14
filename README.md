@@ -17,8 +17,8 @@ Members of LLT
 - Aysha Henan
 - Cenna Joby
 - Fathimath Raniya pk
-- Adarsh
 - Indrajith M V
+- Adarsh
 - Ananya
 - Sreelakshmi S
 - Fadeela
