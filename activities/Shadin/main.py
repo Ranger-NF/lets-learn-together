@@ -16,7 +16,8 @@ def score():
         score += 1
 
     messagebox.showinfo("Score", f"You got {score} out of 3 correct")
-
+    if score == 3:
+        exit()
     ask = messagebox.askyesno("Answer", "Do you want to know the answer?")
     if ask:
         messagebox.showinfo("Answer", "1> 0\n2> Version Control System\n3> No")
