@@ -97,27 +97,27 @@ Guidelines:
 
   - [x] Fahad
   - [x] Ameen
-  - [ ] Arya
+  - [x] Arya
   - [x] Aiswarya
   - [ ] Manju
   - [x] Shadin
   - [ ] Sanjo
   - [x] Anupama
   - [x] Aysha Henan
-  - [ ] Cenna Joby
+  - [x] Cenna Joby
   - [ ] Fathimath Raniya pk
   - [ ] Adarsh
   - [x] Indrajith M V
-  - [ ] Ananya
+  - [x] Ananya
   - [x] Sreelakshmi S
-  - [ ] Fadeela
+  - [x] Fadeela
   - [ ] Arjun
   - [ ] Sreya v
   - [x] Muflih
-  - [ ] Abhirami
+  - [x] Abhirami
   - [x] Abhinav
   - [x] Naseef NT
-  - [ ] Hima
+  - [x] Hima
   - [x] Rishi
 
 </details>
