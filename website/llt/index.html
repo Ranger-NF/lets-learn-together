@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CLI</title>
+    <link rel="stylesheet" href="commands.css">
+</head>
+<body>
+
+    <!-- OS Selection Modal -->
+    <div id="choose-os-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose Your Operating System</h2>
+            <button onclick="closeOSModal('linux')">Linux</button>
+            <button onclick="closeOSModal('windows')">Windows</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Learn CLI</h1>
+        <p id="instruction">Follow the steps below to complete the challenge.</p>
+    </header>
+
+    <!-- Commands Display Area -->
+    <div id="command-list">
+        <h2>Commands:</h2>
+        <!-- Commands will be dynamically injected here -->
+    </div>
+
+    <!-- Tab Content for Linux -->
+    <div id="linux" class="tab-content hidden">
+        <div id="linux-step-1" class="card">
+            <p>Step 1: Run <code>mkdir my_folder</code> to create a folder.</p>
+            <input type="text" id="linux-input-1" oninput="checkCommand('linux')">
+        </div>
+        <div id="linux-step-2" class="card hidden">
+            <p>Step 2: Run <code>cd my_folder</code> to enter the folder.</p>
+            <input type="text" id="linux-input-2" oninput="checkCommand('linux')">
+        </div>
+        <div id="linux-step-3" class="card hidden">
+            <p>Step 3: Run <code>touch file.txt</code> to create a file.</p>
+            <input type="text" id="linux-input-3" oninput="checkCommand('linux')">
+        </div>
+        <div id="linux-step-4" class="card hidden">
+            <p>Step 4: Run <code>rm file.txt</code> to delete the file.</p>
+            <input type="text" id="linux-input-4" oninput="checkCommand('linux')">
+        </div>
+    </div>
+
+    <!-- Tab Content for Windows -->
+    <div id="windows" class="tab-content hidden">
+        <div id="windows-step-1" class="card">
+            <p>Step 1: Run <code>mkdir my_folder</code> to create a folder.</p>
+            <input type="text" id="windows-input-1" oninput="checkCommand('windows')">
+        </div>
+        <div id="windows-step-2" class="card hidden">
+            <p>Step 2: Run <code>cd my_folder</code> to enter the folder.</p>
+            <input type="text" id="windows-input-2" oninput="checkCommand('windows')">
+        </div>
+        <div id="windows-step-3" class="card hidden">
+            <p>Step 3: Run <code>echo. > file.txt</code> to create a file.</p>
+            <input type="text" id="windows-input-3" oninput="checkCommand('windows')">
+        </div>
+        <div id="windows-step-4" class="card hidden">
+            <p>Step 4: Run <code>del file.txt</code> to delete the file.</p>
+            <input type="text" id="windows-input-4" oninput="checkCommand('windows')">
+        </div>
+    </div>
+
+    
+    <!-- Tree Structure Display -->
+    <div id="tree-container">
+        <h2>File Structure:</h2>
+        <pre id="tree-structure">Root</pre>
+    </div>
+    <!-- Next Step Button -->
+    <button id="next-step" onclick="showNextStep()" class="hidden">Next Step</button>
+
+    <script src="commands.js"></script>
+</body>
+</html>

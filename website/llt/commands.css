@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.linux-theme {
+    background-color: #0f0f0f;
+    color: #33ff77; /* Bright green for Linux theme */
+}
+
+body.windows-theme {
+    background-color: #1a237e;
+    color: #90caf9; /* Light blue for Windows theme */
+}
+
+header {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px currentColor;
+}
+
+#instruction {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    transition: color 0.5s ease;
+}
+
+/* OS Selection Modal */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid #33ff77;
+    border-radius: 5px;
+}
+
+/* Tree Structure Styles */
+.tree-container {
+    display: flex;
+    float: right;
+    margin-top: 30px;
+    transition: color 0.5s ease;
+}
+
+.tree-structure {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #222;
+    color: #33ff77; /* Bright green for Linux theme */
+    text-align: left; /* Align the text to the left */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120px; /* Increased font size for better visibility */
+    border: 2px solid #33ff77;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 40px auto;
+    white-space: pre-wrap; /* Preserve line breaks */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+}
+
+/* Add styles for the tree structure span for better visualization */
+.tree-structure span {
+    color: #90caf9; /* Light blue for directories */
+    font-weight: bold;
+    font-size: 120px; /* Increased font size for directories */
+}
+pre {
+    font-size: 24px;
+ }
+ 
+/* Command Input Styles */
+#command-input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    border: 2px solid #33ff77;
+    border-radius: 5px;
+    background-color: #333;
+    color: #33ff77;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+}
+
+#command-input:focus {
+    border-color: #90caf9; /* Focus border color for Windows theme */
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background-color: #1f1f1f;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+
+body.linux-theme .tabs {
+    background-color: #003300; /* Dark green for Linux theme */
+}
+
+body.windows-theme .tabs {
+    background-color: #001970; /* Dark blue for Windows theme */
+}
+
+.tab-button {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid currentColor;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: currentColor;
+    color: #808080;
+    box-shadow: 0 0 10px currentColor;
+}
+
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Linux Accent for Tab Buttons */
+body.linux-theme .tab-button.active {
+    border-color: #33ff77;
+    color: #33ff77; /* Green accent */
+}
+
+/* Windows Accent for Tab Buttons */
+body.windows-theme .tab-button.active {
+    border-color: #1a73e8;
+    color: #1a73e8; /* Windows 11 blue accent */
+}
+
+body.windows-theme .tab-button:hover {
+    background-color: rgba(26, 115, 232, 0.2); /* Windows accent hover */
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Cards */
+.card {
+    background: #121212;
+    color: inherit;
+    border: 2px solid currentColor;
+    margin: 15px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card.hidden {
+    display: none;
+}
+
+/* Next Step Button */
+#next-step {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Linux Theme - Next Step Button */
+body.linux-theme #next-step {
+    background-color: #33ff77; /* Green for Linux theme */
+    color: black;
+}
+
+body.linux-theme #next-step:hover {
+    background-color: #28a745; /* Darker green on hover */
+}
+
+/* Windows Theme - Next Step Button */
+body.windows-theme #next-step {
+    background-color: #1a73e8; /* Blue for Windows theme */
+    color: white;
+}
+
+body.windows-theme #next-step:hover {
+    background-color: #0d56b1; /* Darker blue on hover */
+}
+
+/* Completion Message */
+#completion-message {
+    display: none;
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-top: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+}
+
+/* Confetti Animation */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+    display: none;
+}
+
+.confetti .confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    animation: fall 2s infinite linear;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    /* General Body Styles */
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #instruction {
+        font-size: 1rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        padding: 20px;
+    }
+
+    /* Tree Structure */
+    .tree-structure {
+        font-size: 80px; /* Adjust font size for mobile */
+    }
+
+    .tree-structure span {
+        font-size: 80px; /* Adjust font size for mobile */
+    }
+
+    /* Command Input */
+    #command-input {
+        width: 100%;
+    }
+
+    /* Tabs */
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically on mobile */
+    }
+
+    .tab-button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Cards */
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Completion Message */
+    #completion-message {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for small mobile screens */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #instruction {
+        font-size: 0.9rem;
+    }
+
+    .tree-structure {
+        font-size: 60px; /* Smaller font size on very small screens */
+    }
+
+    .tree-structure span {
+        font-size: 60px; /* Smaller font size on very small screens */
+    }
+
+    .card {
+        width: 95%;
+        padding: 10px;
+    }
+}
