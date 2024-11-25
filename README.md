@@ -125,7 +125,7 @@ Guidelines:
 ### 3. Complete LLT CLI intro
 
 Guidelines:
-1. Open https://github.io
+1. Open https://ranger-nf.github.io/lets-learn-together/
 2. Send the last screenshot to whatsapp group
 
 <details>
