@@ -202,3 +202,15 @@ function closeOSModal(os) {
 window.onload = function() {
     showOSSelection(); // Show the OS selection modal
 };
+
+// Disable text selection and copying
+document.addEventListener('copy', function(event) {
+    event.preventDefault(); // Block the copy action
+    alert('Copying text is disabled on this page.');
+});
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Block the right-click menu
+    alert('Right-click is disabled on this page.');
+});
