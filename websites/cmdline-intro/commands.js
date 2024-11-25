@@ -33,18 +33,18 @@ let nextButton = document.getElementById('next-step');
 // Tree structure content for Linux and Windows
 let treeStructure = {
     linux: [
-        ["->Root/      "],                             // Initial state before any command
-        ["->Root/      ", " └──my_folder/"],           // After mkdir
-        ["Root/        ", " └──>my_folder/"],            // After mkdir + cd
-        ["Root/        ", " └──>my_folder/", "    └──file.txt"], // After touch (file created)
-        ["Root/        ", " └──>my_folder/"]             // After rm (file deleted)
+        ["> Root/      "],                             // Initial state before any command
+        ["> Root/      ", " └── my_folder/"],           // After mkdir
+        ["Root/        ", " └──> my_folder/"],            // After mkdir + cd
+        ["Root/        ", " └──> my_folder/", "    └──file.txt"], // After touch (file created)
+        ["Root/        ", " └──> my_folder/"]             // After rm (file deleted)
     ],
     windows: [
-        ["->C:\\        "],                            // Initial state before any command
-        ["->C:\\        ", " └──my_folder\\"],            // After mkdir
-        ["C:\\          ", " └──>my_folder\\"],            // After mkdir + cd
-        ["C:\\          ", " └──>my_folder\\", "    └──file.txt"], // After echo (file created)
-        ["C:\\          ", " └──>my_folder\\"]             // After del (file deleted)
+        ["> C:\\        "],                            // Initial state before any command
+        ["> C:\\        ", " └── my_folder\\"],            // After mkdir
+        ["C:\\          ", " └──> my_folder\\"],            // After mkdir + cd
+        ["C:\\          ", " └──> my_folder\\", "    └──file.txt"], // After echo (file created)
+        ["C:\\          ", " └──> my_folder\\"]             // After del (file deleted)
     ]
 };
 
@@ -158,8 +158,6 @@ function switchTab(tab) {
     let firstStep = (tab === 'linux') ? linuxSteps[0] : windowsSteps[0];
     firstStep.classList.remove('hidden');
 
-    // Show the command input area for the selected tab
-    displayCommands(tab);
 }
 
 // Display the commands for the selected OS inside the cards

@@ -18,15 +18,19 @@ body.windows-theme {
 }
 
 header {
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.5s ease;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-shadow: 0 0 10px currentColor;
+}
+
+h2 {
+    font-size: 1.2rem;
 }
 
 #instruction {
@@ -96,7 +100,7 @@ header h1 {
     font-size: 120px; /* Increased font size for directories */
 }
 pre {
-    font-size: 24px;
+    font-size: 18px;
  }
  
 /* Command Input Styles */
@@ -288,11 +292,11 @@ body.windows-theme #next-step:hover {
 
     /* Tree Structure */
     .tree-structure {
-        font-size: 80px; /* Adjust font size for mobile */
+        font-size: 40px; /* Adjust font size for mobile */
     }
 
     .tree-structure span {
-        font-size: 80px; /* Adjust font size for mobile */
+        font-size: 40px; /* Adjust font size for mobile */
     }
 
     /* Command Input */
@@ -322,6 +326,14 @@ body.windows-theme #next-step:hover {
     }
 }
 
+code {
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
 @media (max-width: 480px) {
     /* Further adjustments for small mobile screens */
     header h1 {
@@ -333,11 +345,11 @@ body.windows-theme #next-step:hover {
     }
 
     .tree-structure {
-        font-size: 60px; /* Smaller font size on very small screens */
+        font-size: 20px; /* Smaller font size on very small screens */
     }
 
     .tree-structure span {
-        font-size: 60px; /* Smaller font size on very small screens */
+        font-size: 20px; /* Smaller font size on very small screens */
     }
 
     .card {
