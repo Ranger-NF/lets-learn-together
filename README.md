@@ -122,6 +122,41 @@ Guidelines:
 
 </details>
 
+### 3. Complete LLT CLI intro
+
+Guidelines:
+1. Open https://github.io
+2. Send the last screenshot to whatsapp group
+
+<details>
+  <summary>Checklist for members: </summary>
+
+  - [ ] Fahad
+  - [ ] Ameen
+  - [ ] Arya
+  - [ ] Aiswarya
+  - [ ] Manju
+  - [ ] Shadin
+  - [ ] Sanjo
+  - [ ] Anupama
+  - [ ] Aysha Henan
+  - [ ] Cenna Joby
+  - [ ] Fathimath Raniya pk
+  - [ ] Adarsh
+  - [ ] Indrajith M V
+  - [ ] Ananya
+  - [ ] Sreelakshmi S
+  - [ ] Fadeela
+  - [ ] Arjun
+  - [ ] Sreya v
+  - [ ] Muflih
+  - [ ] Abhirami
+  - [ ] Abhinav
+  - [ ] Naseef NT
+  - [ ] Hima
+  - [ ] Rishi
+
+</details>
 
 ---
 
