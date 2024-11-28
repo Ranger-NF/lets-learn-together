@@ -5,6 +5,7 @@ body {
     padding: 0;
     text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease;
+    user-select: none; /* Prevents text selection */
 }
 
 body.linux-theme {
@@ -101,8 +102,8 @@ h2 {
 }
 pre {
     font-size: 18px;
- }
- 
+}
+
 /* Command Input Styles */
 #command-input {
     margin-top: 20px;
@@ -345,15 +346,4 @@ code {
     }
 
     .tree-structure {
-        font-size: 20px; /* Smaller font size on very small screens */
-    }
-
-    .tree-structure span {
-        font-size: 20px; /* Smaller font size on very small screens */
-    }
-
-    .card {
-        width: 95%;
-        padding: 10px;
-    }
-}
+        font-size: 20px; /* Smaller font
