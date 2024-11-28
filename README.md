@@ -131,31 +131,32 @@ Guidelines:
 <details>
   <summary>Checklist for members: </summary>
 
-  - [ ] Fahad
-  - [ ] Ameen
-  - [ ] Arya
-  - [ ] Aiswarya
+  - [x] Fahad
+  - [x] Ameen
+  - [x] Arya
+  - [x] Aiswarya
   - [ ] Manju
-  - [ ] Shadin
+  - [x] Shadin
   - [ ] Sanjo
-  - [ ] Anupama
-  - [ ] Aysha Henan
-  - [ ] Cenna Joby
+  - [x] Anupama
+  - [x] Aysha Henan
+  - [x] Cenna Joby
   - [ ] Fathimath Raniya pk
-  - [ ] Adarsh
-  - [ ] Indrajith M V
-  - [ ] Ananya
-  - [ ] Sreelakshmi S
-  - [ ] Fadeela
+  - [x] Adarsh
+  - [x] Indrajith M V
+  - [x] Ananya
+  - [x] Sreelakshmi S
+  - [x] Fadeela
   - [ ] Arjun
   - [ ] Sreya v
-  - [ ] Muflih
-  - [ ] Abhirami
-  - [ ] Abhinav
-  - [ ] Naseef NT
-  - [ ] Hima
-  - [ ] Rishi
-
+  - [x] Muflih
+  - [x] Abhirami
+  - [x] Abhinav
+  - [x] Abhinav (IT)
+  - [x] Naseef NT
+  - [x] Hima
+  - [x] Rishi
+  - [x] Keerthi
 </details>
 
 ---
