@@ -29,6 +29,7 @@ Members of LLT
 - Abhinav
 - Naseef NT
 - Hima
+- Hamna
 
 ### 2. Git on local system
 1. Install git locally (if on android via termux)
